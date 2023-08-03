@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "llama-snowflake"
+version = "0.0.1"
+description = "llama index with snowflake"
+authors = ["nguyen <nguyen@lfg.dev>"]
+readme = ["README.md", "CHANGELOG.md"]
+packages = [{include = "llama_snowflake"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+snowflake-connector-python = "^3.1.0"
+python-dotenv-vault = "^0.6.1"
+snowflake-sqlalchemy = "^1.4.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
